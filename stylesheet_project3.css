@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Roboto:wght@100;400&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*---Media Queries---*/
+/*For mobile phone: */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+/*---Navigation bar--*/
+.navbar{
+    background-color: #556270;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.navbar-left ul, .navbar-right ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar-left li, .navbar-right li{
+    list-style: none;
+    padding: 10px;
+}
+.navbar-left li a, .navbar-right li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    padding: 10px;
+}
+.navbar li:hover{
+    background-color: #2C3E50 ;
+    border-radius: 10px;
+}
+
+/*---Banner---*/
+.banner h1{
+    font-size: 300%;
+    font-family: 'Merriweather', serif;
+    margin: 10% 10% 0 5%;
+    padding: 0;
+    color: #343434;
+}
+.banner p{
+    font-size: 100%;
+    margin: 2% 5% 5% 5%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 0 5% 0;
+    color: #556270;
+    border-bottom: #dddddd 2px solid;
+}
+/*----Photos-list----*/
+
+.photos-list{
+    margin-top: 20px; 
+}
+.middle-text h2, #footer h3{
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+    padding: 5%;
+    color: #343434;
+    font-weight: bolder;
+}
+.middle-text p, #footer p{
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 5% 0 5%;
+    color: #556270;
+}
+.img1, .img2{
+    margin-bottom: -12%;
+}
+
+.photos-list img{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10%;
+}
+
+/*----Footer----*/
+#footer{
+    margin-bottom: 10%;
+    margin-top: -10%;
+}
+#footer a{
+    padding: 0 5% 0 5%;
+}
+
+@media only screen and (min-width:768px){
+    /*For tablets:*/
+    .col-s-1{width: 8.33%;}
+    .col-s-2{width: 16.66%;}
+    .col-s-3{width: 25%;}
+    .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;}
+    .col-s-6{width: 50%;}
+    .col-s-7{width: 58.33%;}
+    .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;}
+    .col-s-10{width: 83.33%;}
+    .col-s-11{width: 91.66%;}
+    .col-s-12{width: 100%;}
+    .navbar{
+        justify-content: space-between;
+    }
+    .photos-list{
+    margin-top: -5%;
+    }
+    .middle-text p{
+        margin-top: -30px;
+    }
+    .img1, .img2{
+        margin-bottom: -7%;
+    }
+    .row{
+        float: left;
+    }
+   
+}
+
+@media only screen and (min-width:992px){
+    /*For destop:*/
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+    /*---Navigation bar---*/
+    .navbar{
+        background-color: #ffffff;
+    }
+    .navbar li a{
+        color: #556270;
+    }
+    .navbar li:hover{
+        background-color: #F8F9F9 ;
+        border-radius: 10px;
+    }
+
+    /*---Main Background Image----*/
+    #background{
+    min-height: 500px;
+    background: url('Image/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 10px;
+    color: #ffffff;
+    text-align: left;
+    }
+    .banner {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    }
+    .banner h1, .banner p{
+    color: #ffffff;
+    border-bottom: none;
+    width: 100%;
+    }
+
+    /*----Photos-list----*/
+    .photos-list {
+    background-color:	#e8e8e8;
+    margin-top: -25px;
+    }
+    .row{
+        float: left;
+        width: 100%;
+    }
+    #footer{
+        margin: auto;
+        background-color: #f7f7f0;
+    
+    }
+   
+   
+}
+
+
